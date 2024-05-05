@@ -1,29 +1,72 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
+let employeesArray = [employeeFirstNameList[], employeeLastNameList[], employeeSalaryList[]];
+let employeeFirstNameList = []
+let employeeLastNameList = []
+let employeeSalaryList =[]
+
+class employee {
+    constructor(firstName, lastName, salary){
+             employeeFirstNameList[] = firstName;
+             employeeLastNameList[] = lastName;
+             employeeSalaryList[] = salary
+        };  
+      }
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
 
-  class employee {
-    constructor(firstName, lastName){
+addEmployeesBtn.addEventListener("click", createEmployee) {
+var stop;
+
+while (true) {
+        function(createEmployee) {
         prompt("enter first name:") = firstName;
+        employeeFirstNameList.push(firstName);
         then(
-            prompt("enter last name:") = lastName;
+            prompt(`now enter ${firstName}'s last name:`) = lastName;
+            employeeLastNameList.push(lastNameName);
         );
-    };
-  }
+        then(
+            prompt(`${firstName} ${lastName}'s salary:`)
+            employeeSalaryList.push(salary);
+        );
+    }
+    stop = prompt("enter another employee? (Y for yes, N to stop)", ES);
+    (stop.toUppercase() != "N");
+ };
+};
+
 
 }
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-}
+  let sum = null
+
+  sumOfSalary => () {
+  for (let i =0; i < employeeSalaryList.length; i++) {
+    sum += employeeSalaryList[i];
+  };
+  return sum
+ };
+
+const averageSalary = (sum/employeeSalaryList.length)
+
+console.log(`The average employee salary between our ${employeesArray.length} is ${averageSalary}`)
+
+
+};
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+var randomIndex = math.floor(math.random() * employeesArray.length)
+var randomEmployeeId = employeesArray.splice(randomIndex, 1)[0]
+console.log(`whooo! looks like ${randomEmployeeId} has won the lottery`)
+
 }
 
 /*
