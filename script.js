@@ -1,45 +1,42 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-
-let employeesArray = [employeeFirstNameList[], employeeLastNameList[], employeeSalaryList[]];
+let employeesArray = []
 let employeeFirstNameList = []
 let employeeLastNameList = []
 let employeeSalaryList =[]
 
 class employee {
     constructor(firstName, lastName, salary){
-             employeeFirstNameList[] = firstName;
-             employeeLastNameList[] = lastName;
-             employeeSalaryList[] = salary
+             employeeFirstNameList = firstName;
+             employeeLastNameList = lastName;
+             employeeSalaryList = salary
         };  
       }
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
+  let employeesArray = [employeeFirstNameList, employeeLastNameList, employeeSalaryList];
 
-addEmployeesBtn.addEventListener("click", createEmployee) {
-var stop;
-
-while (true) {
-        function(createEmployee) {
-        prompt("enter first name:") = firstName;
+addEmployeesBtn.addEventListener("click", function (createEmployee) {
+  while (true) {
+        function createEmployee()  {
+        let firstName = prompt("enter first name:");
         employeeFirstNameList.push(firstName);
+        then)
+           let lastName = prompt(`now enter ${firstName}'s last name`) ;
+            employeeLastNameList.push(lastNameName); 
+          )
         then(
-            prompt(`now enter ${firstName}'s last name:`) = lastName;
-            employeeLastNameList.push(lastNameName);
-        );
-        then(
-            prompt(`${firstName} ${lastName}'s salary:`)
-            employeeSalaryList.push(salary);
-        );
-    }
+           var salary = prompt(`${firstName} ${lastName}'s salary:`);
+            employeeSalaryList.push(salary));
+    };
     stop = prompt("enter another employee? (Y for yes, N to stop)", ES);
     (stop.toUppercase() != "N");
  };
+});
+  return employeesArray
 };
 
-
-}
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
